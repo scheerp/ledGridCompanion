@@ -1,0 +1,17 @@
+<div class="content">
+  {{led-pixel-grid width=16 height=16 activeColor=computedColor}}
+  <div class="color" style="{{computedColor}}">
+  Fill All
+  </div>
+  <div>
+    {{spectrum-color-picker
+        color=activeColor
+        preferredFormat='rgb'
+        showInitial=true
+        moveFiresChange=true
+        flatMode=true
+        clickoutFiresChange=true
+    }}
+  </div>
+  {{outlet}}
+</div>

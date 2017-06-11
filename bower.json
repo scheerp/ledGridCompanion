@@ -1,0 +1,7 @@
+{
+  "name": "led-grid-companion",
+  "dependencies": {
+    "colpick": "2.0.2",
+    "spectrum": "^1.8.0"
+  }
+}
