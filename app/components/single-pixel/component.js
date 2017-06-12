@@ -1,12 +1,17 @@
 import Ember from 'ember';
+import computed from 'ember-computed';
 
 export default Ember.Component.extend({
-  color: null,
+  colorStyle: null,
   activeColor: null,
+
+  computedColor: Ember.computed('colorStyle', function() {
+    return null;
+  }),
 
   actions: {
     changeColor(){
-      this.set('color', this.get('activeColor'));
+      this.set('colorStyle', this.get('activeColor'));
     }
   }
 });
